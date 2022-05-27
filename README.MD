@@ -1,1 +1,1 @@
-De boa? Esse Projeto feito para a Faculdade em que foi pedido o desenvolvimento de uma calculadora de IMC utilizando HTML, CSS e JavaScript.
+Projeto de Calculadora de IMC. Feito com HTML, CSS e JavaScript
