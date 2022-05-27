@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculo do IMC</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <p>Hiago Lima Silveira RA:N900474</p>
+  </header>
+
+  <main>
+    <section class="conteudo">
+      <!--Formulario-->
+      <section class="calculo">
+        <form class="form">
+          <label>IMC</label>
+          <p class="total" id="resultado">00,00</p>
+          <label>Altura (em Metros)</label>
+          <br>
+          <input class="texto" type="number" id="altura" name="altura" maxlength="4" min="0" oninput="validity.valid||(value=value.replace(/-/g, ''))" onchange="this.value = this.value.replace(/,/g, '.')">
+          <br>
+          <label>Peso (em Quilos)</label>
+          <br>
+         
+          <input class="texto" type="number" id="peso" name="peso" min="0" oninput="validity.valid||(value=value.replace(/\D+/g, ''))">
+          <br>
+          <input class="btn" type="button" id="calcular" value="CALCULAR" onclick="calc();">
+        </form>
+      </section>
+
+      <!--Tabela-->
+
+      <section class="tabela">
+        <table>
+          <tr>
+            <th>IMC</th>
+            <th>CLASSIFICAÇÃO</th>
+          </tr>
+          <tr>
+            <td class="imc">18,5</td>
+            <td>Baixo peso</td>
+          </tr> 
+          <tr>
+            <td class="imc">18,5 - 24,9</td>
+            <td>Peso normal</td>
+          </tr> 
+          <tr>
+            <td class="imc">25 - 29,9</td>
+            <td>Sobrepeso</td>
+          </tr> 
+          <tr>
+            <td class="imc">30 - 34,9</td>
+            <td>Obesidade Grau I</td>
+          </tr> 
+          <tr>
+            <td class="imc">35 - 39,9</td>
+            <td>Obesidade Grau II</td>
+          </tr>
+          <tr>
+            <td class="imc">40+</td>
+            <td>Obesidade Grau III</td>
+          </tr>
+
+        </table>
+      </section>
+
+    </section>
+  </main>
+  <footer>
+    <p>Fonte:<a href="https://www.euro.who.int/en/health-topics/disease-prevention/nutrition/a-healthy-lifestyle/body-mass-index-bmi">WHO(World Health Organization)</a></p>
+  </footer>
+</body>
+</html>
