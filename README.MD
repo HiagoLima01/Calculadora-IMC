@@ -1,1 +1,1 @@
-De boa? Esse Projeto feito para a Faculdade em que foi pedido o desenvolvimento de uma calculadora utilizando HTML, CSS e JavaScript.
+De boa? Esse Projeto feito para a Faculdade em que foi pedido o desenvolvimento de uma calculadora de IMC utilizando HTML, CSS e JavaScript.
